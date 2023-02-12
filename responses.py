@@ -7,10 +7,10 @@ def handle_response(message) -> str:
         return msg + cmds  # + "\nBegin a query with '?' to have a private response"
 
     if p_message[0:4] == '+play':
-        return "coming soon!"
+        return "feature coming soon!"
 
     if p_message == '+skip':
-        return "coming soon!"
+        return "feature coming soon!"
 
     if p_message == '+disconnect':
-        return "coming soon!"
+        return "feature coming soon!"
