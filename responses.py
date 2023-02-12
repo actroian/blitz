@@ -1,3 +1,4 @@
+import playsong as p
 def handle_response(message) -> str:
     p_message = message.lower()
 
@@ -7,7 +8,11 @@ def handle_response(message) -> str:
         return msg + cmds  # + "\nBegin a query with '?' to have a private response"
 
     if p_message[0:4] == '+play':
-        return "feature coming soon!"
+        p.play(p_message[5:])
+        if True:
+            return "`Now playing: " + p_message + "`"[5:]
+        else:
+            return "`" + p_message[5:] + " added to queue`"
 
     if p_message == '+skip':
         return "feature coming soon!"

@@ -1,5 +1,6 @@
 import discord
 import responses
+import token
 
 async def send_message(message, user_message, isPrivate):
     try:
@@ -10,7 +11,7 @@ async def send_message(message, user_message, isPrivate):
         print(e)
 
 def run_bot():
-    TOKEN = 'OTc2MjI4MjI5NDk5MTk1NDMz.G_Cudd.6gQdG1PpJknQveR6RzsKjMqUykXfQKzLg7q9r8'
+    TOKEN = token.T
     intents = discord.Intents.default()
     intents.message_content = True
     client = discord.Client(intents=intents)
